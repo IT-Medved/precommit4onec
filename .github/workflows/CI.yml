@@ -30,3 +30,5 @@ jobs:
         run: opm install coverage && opm install 1testrunner && opm install asserts && opm install 1bdd && opm install gitrunner
       - name: Запуск тестов
         run: opm run test
+        env:
+          LOGOS_LEVEL: DEBUG
