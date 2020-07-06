@@ -26,7 +26,9 @@ jobs:
       - name: Установка Onescript
         uses: otymko/setup-onescript@v1
         with:
-          java-version: ${{ matrix.oscript_version }}
+          version: ${{ matrix.oscript_version }}
+      
+      - name: opm update  
       - run: opm update opm
         
       - name: Run a one-line script
